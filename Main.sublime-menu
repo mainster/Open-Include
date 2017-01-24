@@ -15,65 +15,25 @@
 						"caption": "Open Include",
 						"children":
 						[
-							{
-								"command": "open_file",
-								"args": {"file": "${packages}/Open-Include/Open-Include.sublime-settings"},
-								"caption": "Settings – Default"
-							},
-							{
-								"command": "open_file",
-								"args": {"file": "${packages}/User/Open-Include.sublime-settings"},
-								"caption": "Settings – User"
-							},
-							{ "caption": "-" },
-							{
-								"command": "open_file",
-								"args": {
-									"file": "${packages}/Open-Include/Default (Windows).sublime-keymap",
-									"platform": "Windows"
-								},
-								"caption": "Key Bindings – Default"
-							},
-							{
-								"command": "open_file",
-								"args": {
-									"file": "${packages}/Open-Include/Default (OSX).sublime-keymap",
-									"platform": "OSX"
-								},
-								"caption": "Key Bindings – Default"
-							},
-							{
-								"command": "open_file",
-								"args": {
-									"file": "${packages}/Open-Include/Default (Linux).sublime-keymap",
-									"platform": "Linux"
-								},
-								"caption": "Key Bindings – Default"
-							},{
-								"command": "open_file",
-								"args": {
-									"file": "${packages}/User/Default (Windows).sublime-keymap",
-									"platform": "Windows"
-								},
-								"caption": "Key Bindings – User"
-							},
-							{
-								"command": "open_file",
-								"args": {
-									"file": "${packages}/User/Default (OSX).sublime-keymap",
-									"platform": "OSX"
-								},
-								"caption": "Key Bindings – User"
-							},
-							{
-								"command": "open_file",
-								"args": {
-									"file": "${packages}/User/Default (Linux).sublime-keymap",
-									"platform": "Linux"
-								},
-								"caption": "Key Bindings – User"
-							},
-							{ "caption": "-" }
+
+                            {
+                                "caption": "Settings build-in",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/Open-Include/Open-Include.sublime-settings",
+                                    "user_file": "${packages}/User/Open-Include.sublime-settings",
+                                    "default":   "default",
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings build-in",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/Open-Include/Default (${platform}).sublime-keymap",
+                                    "user_file": "${packages}/User/Default (${platform}).sublime-keymap",
+                                    "default":   "default",
+                                }
+                            },
 						]
 					}
 				]
